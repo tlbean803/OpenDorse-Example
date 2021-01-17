@@ -95,7 +95,7 @@ namespace OpenDorseCareersTests
             foreach (IWebElement link in allLinks)
             {
                 
-                if (link.Text.Trim().Equals("QA Engineer"))
+                if (link.Text.Trim().Equals("QA Analyst"))
                 {
                     link.Click();
                     break;
@@ -104,7 +104,7 @@ namespace OpenDorseCareersTests
 
             Thread.Sleep(7000);
             
-            if (driver.FindElement(By.TagName("h2")).GetAttribute("innerText").Equals("QA Engineer"))
+            if (driver.FindElement(By.TagName("h2")).GetAttribute("innerText").Equals("QA Analyst"))
 
             {
 
